@@ -1,0 +1,27 @@
+首先在github上创建一个库
+
+ssh-keygen -t rsa -C “zxt20040703@163.com”//获取密钥
+
+C:\Users\张先韬\.ssh //密钥地址，打开id_rsa文件查看并复制
+
+在github右上角头像设置，左侧SSH and GPG　ｋｅｙｓ里粘贴进去
+
+ssh -T git@github.com
+
+git config --global user.name "zxt27"
+
+git config --global user.email "zxt20040703@163.com"
+
+git init //在本地库中右击 生成git隐藏文件
+
+git remote add origin git@github.com:zxt27/taotao.git //关联
+
+git pull --rebase origin master  //从github上同步到本地文件
+
+git add .
+ 
+git commit -m "标题"
+
+git push origin master   //从本地文件同步到github
+
+git push //第二次及以后可用 git push -u origin master//git push --set-upstream origin master
