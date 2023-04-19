@@ -6,5 +6,5 @@ duck = 27
 duck = type(duck)
 print(duck)
 duck = 90
-duck -= 1
+duck -= 10
 print(duck)
