@@ -1,2 +1,3 @@
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-查看当前源：pip 
+查看当前源：pip config list
+ 
